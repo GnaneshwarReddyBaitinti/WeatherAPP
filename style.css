@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    font-size:100%;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background: #edb4b4;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 40px;  
+}
+
+.card .card-info{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.card .card-info .card-content {
+    padding:10px;
+    border-bottom:1px solid #333333;
+}
+
+.card .card-weather {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap:12px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+
+.card .card-weather .card-weather-icon {
+    animation: move 1s infinite alternate ease-in-out;
+}
+
+.card .card-weather .card-weather-desc {
+    font-size: 13px;
+}
+
+.temp { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding:45px;
+    width: 150px;
+    height: 20px;
+    background-color: rgba(238, 191, 191, 0.826);
+    border-radius: 100px;
+    margin: 10px;
+    white-space:nowrap;
+    font-weight:bold;
+}
+
+.background-clip{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 760px){
+    
+
+    .background-clip{
+        display: none;
+    }
+
+    body{        
+        background-color: #ae5353;
+    }
+    
+    .horizontal-text-div{
+        display: inline-block;
+        width: 300px;
+        height: 400px;
+        margin-right: 10px;
+    }
+}
+
+
+
+

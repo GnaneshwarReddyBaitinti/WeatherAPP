@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="icon" type="image/x-icon" href="Assests/weather-app.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="Assests/video.mp4" type="video/mp4">
+          </video>
+    <div class="card horizontal-text-div">
+        <div class="card-info">
+            <p id="country" class="card-content"></p>
+            <p id="currentLocation" class="card-content"></p>
+            <p id="date" class="card-content"></p>
+        </div>
+        <div class="card-weather">
+            <img id="morning" class="card-weather-icon"  src="" alt="">
+            <p id="morning-desc" class="card-weather-desc"></p>
+        </div>
+        <div class="card-weather">
+            <img id="night"  class="card-weather-icon" src="" alt="">
+            <p id="night-desc" class="card-weather-desc"></p>
+        </div>
+         
+        <div class="temp">
+
+            <p class="temp-max">Max: <span id="maxTemperature"></span></p>
+        <p class="temp-min">Min: <span id="minTemperature"></span></p> 
+        </div>
+    </div>
+</div>
+   
+        
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <Script src="script.js"></Script>
+</body>
+</html>
